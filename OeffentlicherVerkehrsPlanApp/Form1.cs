@@ -18,6 +18,7 @@ namespace OeffentlicherVerkehrsPlanApp
 
     private void btnShowBoard_Click(object sender, EventArgs e)
     {
+      BoardDataGrid.Rows.Clear();
       var board = ovpCore.getStationBoard(BoardSelectComboBox.Text);
 
       foreach (var entrie in board.Entries) 
@@ -116,6 +117,7 @@ namespace OeffentlicherVerkehrsPlanApp
 
     private void ConnectionSearch(object sender, EventArgs e)
     {
+      ConnectionsDataGrid.Rows.Clear();
       VonStationComboBox.Text = ovpCore.getStation(VonStationComboBox.Text);
       BisStationComboBox.Text = ovpCore.getStation(BisStationComboBox.Text);
       string searchDate = datePickerConnections.Value.ToString("yyyy-MM-dd");

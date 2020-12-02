@@ -113,7 +113,7 @@
       this.timePickerConnections.Name = "timePickerConnections";
       this.timePickerConnections.ShowUpDown = true;
       this.timePickerConnections.Size = new System.Drawing.Size(106, 20);
-      this.timePickerConnections.TabIndex = 11;
+      this.timePickerConnections.TabIndex = 7;
       // 
       // datePickerConnections
       // 
@@ -121,7 +121,7 @@
       this.datePickerConnections.Location = new System.Drawing.Point(25, 19);
       this.datePickerConnections.Name = "datePickerConnections";
       this.datePickerConnections.Size = new System.Drawing.Size(106, 20);
-      this.datePickerConnections.TabIndex = 12;
+      this.datePickerConnections.TabIndex = 7;
       // 
       // ConnectionsDataGrid
       // 
@@ -160,7 +160,7 @@
       this.ConnectionSearchButton.Location = new System.Drawing.Point(15, 140);
       this.ConnectionSearchButton.Name = "ConnectionSearchButton";
       this.ConnectionSearchButton.Size = new System.Drawing.Size(762, 23);
-      this.ConnectionSearchButton.TabIndex = 2;
+      this.ConnectionSearchButton.TabIndex = 9;
       this.ConnectionSearchButton.Text = "Verbindungen Suchen";
       this.ConnectionSearchButton.UseVisualStyleBackColor = true;
       this.ConnectionSearchButton.Click += new System.EventHandler(this.ConnectionSearch);
@@ -182,7 +182,7 @@
       this.button2.Location = new System.Drawing.Point(20, 48);
       this.button2.Name = "button2";
       this.button2.Size = new System.Drawing.Size(87, 23);
-      this.button2.TabIndex = 11;
+      this.button2.TabIndex = 3;
       this.button2.Text = "Show on map";
       this.button2.UseVisualStyleBackColor = true;
       this.button2.Click += new System.EventHandler(this.ShowVonLocationOnMap);
@@ -192,7 +192,7 @@
       this.btnCLVon.Location = new System.Drawing.Point(20, 19);
       this.btnCLVon.Name = "btnCLVon";
       this.btnCLVon.Size = new System.Drawing.Size(87, 23);
-      this.btnCLVon.TabIndex = 10;
+      this.btnCLVon.TabIndex = 1;
       this.btnCLVon.Text = "Nearest to me";
       this.btnCLVon.UseVisualStyleBackColor = true;
       this.btnCLVon.Click += new System.EventHandler(this.btnCurrentLocation_Click);
@@ -204,7 +204,7 @@
       this.VonStationComboBox.MaxDropDownItems = 5;
       this.VonStationComboBox.Name = "VonStationComboBox";
       this.VonStationComboBox.Size = new System.Drawing.Size(146, 21);
-      this.VonStationComboBox.TabIndex = 9;
+      this.VonStationComboBox.TabIndex = 2;
       this.VonStationComboBox.SelectedValueChanged += new System.EventHandler(this.cmbVon_SelectedValueChanged);
       this.VonStationComboBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbxSearch_Change);
       // 
@@ -225,7 +225,7 @@
       this.button4.Location = new System.Drawing.Point(22, 49);
       this.button4.Name = "button4";
       this.button4.Size = new System.Drawing.Size(87, 23);
-      this.button4.TabIndex = 12;
+      this.button4.TabIndex = 6;
       this.button4.Text = "Show on map";
       this.button4.UseVisualStyleBackColor = true;
       this.button4.Click += new System.EventHandler(this.ShowBisLocationOnMap);
@@ -235,7 +235,7 @@
       this.btnCLBis.Location = new System.Drawing.Point(22, 20);
       this.btnCLBis.Name = "btnCLBis";
       this.btnCLBis.Size = new System.Drawing.Size(87, 23);
-      this.btnCLBis.TabIndex = 12;
+      this.btnCLBis.TabIndex = 4;
       this.btnCLBis.Text = "Nearest to me";
       this.btnCLBis.UseVisualStyleBackColor = true;
       this.btnCLBis.Click += new System.EventHandler(this.btnCurrentLocation_Click);
@@ -246,7 +246,7 @@
       this.BisStationComboBox.Location = new System.Drawing.Point(115, 22);
       this.BisStationComboBox.Name = "BisStationComboBox";
       this.BisStationComboBox.Size = new System.Drawing.Size(146, 21);
-      this.BisStationComboBox.TabIndex = 10;
+      this.BisStationComboBox.TabIndex = 5;
       this.BisStationComboBox.SelectedValueChanged += new System.EventHandler(this.cmbVon_SelectedValueChanged);
       this.BisStationComboBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbxSearch_Change);
       // 
