@@ -9,28 +9,37 @@ namespace OeffentlicherVerkehrsPlanApp
   {
     private ITransport transport = new Transport();
 
-    public string getStation(string Station) {
+    public string getStation(string Station) 
+    {
       var Stations = transport.GetStations(Station).StationList;
-      if (Stations.Count == 0) {
+      if (Stations.Count == 0) 
+      {
         return null;
-      } else {
+      } 
+      else 
+      {
         return Stations.First().Name;
       }
       
     }
 
-    public Coordinate getCoordinatesOf(string Station) {
+    public Coordinate getCoordinatesOf(string Station) 
+    {
       if (getStation(Station) != null) 
       {
         return transport.GetStations(Station).StationList.First().Coordinate;
-      } else {
+      } 
+      else 
+      {
         return null;
       }
     }
 
-    public List<String> getStations(string Stations) {
+    public List<String> getStations(string Stations) 
+    {
       List<String> strings = new List<string>();
-      foreach (var Station in transport.GetStations(Stations).StationList) {
+      foreach (var Station in transport.GetStations(Stations).StationList) 
+      {
         strings.Add(Station.Name);
       }
       return strings;
@@ -62,11 +71,10 @@ namespace OeffentlicherVerkehrsPlanApp
     internal StationBoardRoot getStationBoard(string station)
     {
       return transport.GetStationBoard(station, getStation(station));
-      
-      
     }
 
-    public List<Connection> getConnections(string text1, string text2, string text3, string text4) {
+    public List<Connection> getConnections(string text1, string text2, string text3, string text4) 
+    {
       return transport.GetConnections(text1, text2, text3, text4).ConnectionList;
     }
 

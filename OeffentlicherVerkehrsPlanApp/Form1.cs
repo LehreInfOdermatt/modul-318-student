@@ -20,7 +20,8 @@ namespace OeffentlicherVerkehrsPlanApp
     {
       var board = ovpCore.getStationBoard(BoardSelectComboBox.Text);
 
-      foreach (var entrie in board.Entries) {
+      foreach (var entrie in board.Entries) 
+      {
         BoardDataGrid.Rows.Add(entrie.Name,entrie.Number,entrie.To);
       }
 
@@ -38,7 +39,8 @@ namespace OeffentlicherVerkehrsPlanApp
 
     private void tbxSearch_Change(object sender, KeyEventArgs e)
     {
-      if (e.KeyData != Keys.Up && e.KeyData != Keys.Down && e.KeyData != Keys.Enter && e.KeyData != Keys.Tab) {
+      if (e.KeyData != Keys.Up && e.KeyData != Keys.Down && e.KeyData != Keys.Enter && e.KeyData != Keys.Tab) 
+      {
 
         var comboBox = (ComboBox)sender;
         string varia = comboBox.Text;
@@ -55,7 +57,8 @@ namespace OeffentlicherVerkehrsPlanApp
           comboBox.Items.Clear();
           foreach (var variable in ovpCore.getStations(comboBox.Text, 4))
           {
-            if (variable != null) { 
+            if (variable != null) 
+            { 
               comboBox.Items.Add(variable); 
             }
             
@@ -66,7 +69,9 @@ namespace OeffentlicherVerkehrsPlanApp
           comboBox.SelectionLength = 0;
           comboBox.Text = varia;
         }
-      } else if (e.KeyData == Keys.Enter) {
+      } 
+      else if (e.KeyData == Keys.Enter) 
+      {
         ((ComboBox)sender).DropDownStyle = ComboBoxStyle.DropDown;
       }
     }
