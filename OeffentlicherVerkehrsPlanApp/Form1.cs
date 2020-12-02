@@ -29,7 +29,7 @@ namespace OeffentlicherVerkehrsPlanApp
 
     private void cmbVon_TextChanged(object sender, EventArgs e)
     {
-      //tbxSearch_Change(sender, null);
+      
     }
 
     private void cmbVon_SelectedValueChanged(object sender, EventArgs e)

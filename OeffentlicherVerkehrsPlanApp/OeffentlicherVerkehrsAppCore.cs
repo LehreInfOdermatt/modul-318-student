@@ -20,7 +20,6 @@ namespace OeffentlicherVerkehrsPlanApp
       {
         return Stations.First().Name;
       }
-      
     }
 
     public Coordinate getCoordinatesOf(string Station) 
@@ -60,7 +59,6 @@ namespace OeffentlicherVerkehrsPlanApp
       {
         return strings.GetRange(0, max);
       }
-      
     }
 
     internal List<Connection> getConnections(string text1, string text2)
